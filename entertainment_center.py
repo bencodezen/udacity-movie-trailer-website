@@ -1,6 +1,11 @@
+"""
+Import library for generating HTML pages
+Import library for Movie class
+"""
 import fresh_tomatoes
 import movie
 
+# Create four instances of Movie class
 the_incredibles = movie.Movie("The Incredibles",
                               "https://upload.wikimedia.org/wikipedia/en/e/ec/The_Incredibles.jpg",
                               "https://www.youtube.com/watch?v=eZbzbC9285I")
@@ -14,6 +19,8 @@ monsters_inc = movie.Movie("Monsters Inc",
                            "https://lumiere-a.akamaihd.net/v1/images/image_3c4add40.jpeg",
                            "https://www.youtube.com/watch?v=cvOQeozL4S0")
 
+# Create a list of all movies to use in the web page
 movies = [the_incredibles, ratatouille, inside_out, monsters_inc]
 
+# Call function to open web page with all movies inside of it
 fresh_tomatoes.open_movies_page(movies)
